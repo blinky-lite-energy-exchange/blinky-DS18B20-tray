@@ -1,21 +1,21 @@
 {
-  "deviceType": "blinky-basic",
-  "name": "01",
+  "deviceType": "blinky-DS18B20",
+  "name": "03",
   "arcPeriod": 60000,
-  "timeStamp": 1610962831200,
-  "lastArchive": 1610962777220,
-  "ledState": {
+  "timeStamp": 1600576723130,
+  "lastArchive": 1600576720254,
+  "tempA": {
     "action": "reading",
     "type": "scalar",
-    "value": 0,
-    "unit": "unit",
+    "value": 17.437,
+    "unit": "C",
     "alarm": {
       "value": 0,
       "limits": {
-        "lolo": -2,
-        "low": -1,
-        "high": 2,
-        "hihi": 3
+        "lolo": 5,
+        "low": 8,
+        "high": 30,
+        "hihi": 40
       },
       "notify": {
         "name": "",
@@ -24,10 +24,30 @@
       }
     }
   },
+  "tempB": {
+    "action": "reading",
+    "type": "scalar",
+    "value": 18.312,
+    "unit": "C",
+    "alarm": {
+      "value": 0,
+      "limits": {
+        "lolo": 5,
+        "low": 6,
+        "high": 21,
+        "hihi": 23
+      },
+      "notify": {
+        "name": "David McGinnis",
+        "number": "",
+        "time": 0
+      }
+    }
+  },
   "linkQuality": {
     "action": "reading",
     "type": "scalar",
-    "value": 50,
+    "value": 66,
     "unit": "/70",
     "alarm": {
       "value": 0,
@@ -47,7 +67,7 @@
   "signalLevel": {
     "action": "reading",
     "type": "scalar",
-    "value": -60,
+    "value": -44,
     "unit": "dBm",
     "alarm": {
       "value": 0,
@@ -64,65 +84,15 @@
       }
     }
   },
-  "ledOn": {
+  "tempAid": {
     "action": "setting",
-    "type": "scalar",
-    "value": 0,
-    "unit": "unit",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": -2,
-        "low": -1,
-        "high": 2,
-        "hihi": 3
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    }
+    "type": "string",
+    "value": "FD5779971003"
   },
-  "ledToggle": {
+  "tempBid": {
     "action": "setting",
-    "type": "scalar",
-    "value": 0,
-    "unit": "unit",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": -2,
-        "low": -1,
-        "high": 2,
-        "hihi": 3
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    }
-  },
-  "loopDelay": {
-    "action": "setting",
-    "type": "scalar",
-    "value": 1000,
-    "unit": "unit",
-    "alarm": {
-      "value": 0,
-      "limits": {
-        "lolo": 0,
-        "low": 0,
-        "high": 20000,
-        "hihi": 30000
-      },
-      "notify": {
-        "name": "",
-        "number": "",
-        "time": 0
-      }
-    }
+    "type": "string",
+    "value": "47B779971003"
   },
   "reset": {
     "action": "setting",
