@@ -7,10 +7,10 @@
   "tempA": {
     "action": "reading",
     "type": "scalar",
-    "value": 17.437,
+    "value": 0,
     "unit": "C",
     "alarm": {
-      "value": 0,
+      "value": 3,
       "limits": {
         "lolo": 5,
         "low": 8,
@@ -27,10 +27,10 @@
   "tempB": {
     "action": "reading",
     "type": "scalar",
-    "value": 18.312,
+    "value": 0,
     "unit": "C",
     "alarm": {
-      "value": 0,
+      "value": 3,
       "limits": {
         "lolo": 5,
         "low": 6,
@@ -47,7 +47,7 @@
   "linkQuality": {
     "action": "reading",
     "type": "scalar",
-    "value": 66,
+    "value": 63,
     "unit": "/70",
     "alarm": {
       "value": 0,
@@ -67,7 +67,7 @@
   "signalLevel": {
     "action": "reading",
     "type": "scalar",
-    "value": -44,
+    "value": -47,
     "unit": "dBm",
     "alarm": {
       "value": 0,
