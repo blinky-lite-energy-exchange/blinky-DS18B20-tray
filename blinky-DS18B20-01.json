@@ -1,0 +1,127 @@
+{
+  "deviceType": "blinky-DS18B20",
+  "name": "01",
+  "arcPeriod": 60000,
+  "timeStamp": 1617736565836,
+  "lastArchive": 1617736537654,
+  "linkQuality": {
+    "action": "reading",
+    "type": "scalar",
+    "value": 40,
+    "unit": "/70",
+    "alarm": {
+      "value": 0,
+      "limits": {
+        "lolo": 30,
+        "low": 40,
+        "high": 71,
+        "hihi": 80
+      },
+      "notify": {
+        "name": "",
+        "number": "",
+        "time": 0
+      }
+    }
+  },
+  "signalLevel": {
+    "action": "reading",
+    "type": "scalar",
+    "value": -70,
+    "unit": "dBm",
+    "alarm": {
+      "value": 1,
+      "limits": {
+        "lolo": -70,
+        "low": -60,
+        "high": 0,
+        "hihi": 30
+      },
+      "notify": {
+        "name": "",
+        "number": "",
+        "time": 0
+      }
+    }
+  },
+  "loopDelay": {
+    "action": "setting",
+    "type": "scalar",
+    "value": 100,
+    "unit": "mS",
+    "alarm": {
+      "value": 0,
+      "limits": {
+        "lolo": 50,
+        "low": 50,
+        "high": 10000,
+        "hihi": 10000
+      },
+      "notify": {
+        "name": "",
+        "number": "",
+        "time": 0
+      }
+    }
+  },
+  "reset": {
+    "action": "setting",
+    "type": "scalar",
+    "value": 0,
+    "unit": "unit",
+    "alarm": {
+      "value": 0,
+      "limits": {
+        "lolo": -1,
+        "low": -1,
+        "high": 2,
+        "hihi": 2
+      },
+      "notify": {
+        "name": "",
+        "number": "",
+        "time": 0
+      }
+    }
+  },
+  "tempA": {
+    "action": "reading",
+    "type": "scalar",
+    "value": 4.13,
+    "unit": "degrees",
+    "alarm": {
+      "value": 1,
+      "limits": {
+        "lolo": 0,
+        "low": 12,
+        "high": 24,
+        "hihi": 36
+      },
+      "notify": {
+        "name": "",
+        "number": "",
+        "time": 0
+      }
+    }
+  },
+  "tempB": {
+    "action": "reading",
+    "type": "scalar",
+    "value": 4.13,
+    "unit": "degrees",
+    "alarm": {
+      "value": 1,
+      "limits": {
+        "lolo": 0,
+        "low": 12,
+        "high": 24,
+        "hihi": 36
+      },
+      "notify": {
+        "name": "",
+        "number": "",
+        "time": 0
+      }
+    }
+  }
+}
