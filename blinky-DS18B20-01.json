@@ -1,6 +1,6 @@
 {
   "deviceType": "blinky-DS18B20",
-  "name": "03",
+  "name": "01",
   "arcPeriod": 60000,
   "timeStamp": 1600576723130,
   "lastArchive": 1600576720254,
