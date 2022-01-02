@@ -1631,7 +1631,7 @@
         "type": "function",
         "z": "45cb337708a99c31",
         "name": "Decode Temp",
-        "func": "var temp = -100;\nif (msg.rc.code == 0)\n{\n    temp = Number(msg.payload.split('\\n')[0]) / 1000;\n}\nflow.get('device')[msg.topic].value = temp;\n//node.warn(flow.get('device')[msg.topic].value);\nvar blueLedValue = context.get('blueLedValue');\nif (blueLedValue == undefined) blueLedValue = 1;\nif (blueLedValue == 0)\n{\n    blueLedValue = 1; \n}\nelse\n{\n    blueLedValue = 0;\n}\ncontext.set('blueLedValue', blueLedValue);\nvar sendMsg = false;\nif (msg.topic == 'tempB') sendMsg = true;\n\nreturn  [{topic:'newSettingDone', payload:sendMsg},{topic : 'blueLed', payload : blueLedValue}];\n",
+        "func": "var temp = -100;\nif (msg.rc.code == 0)\n{\n    temp = Number(msg.payload.split('\\n')[0]) / 1000;\n}\nelse\n{\n    node.warn('Bad RC code for ' + msg.topic);\n    return [null,null];\n}\nflow.get('device')[msg.topic].value = temp;\nvar blueLedValue = context.get('blueLedValue');\nif (blueLedValue == undefined) blueLedValue = 1;\nif (blueLedValue == 0)\n{\n    blueLedValue = 1; \n}\nelse\n{\n    blueLedValue = 0;\n}\ncontext.set('blueLedValue', blueLedValue);\nvar sendMsg = false;\nif (msg.topic == 'tempB') sendMsg = true;\n\nreturn  [{topic:'newSettingDone', payload:sendMsg},{topic : 'blueLed', payload : blueLedValue}];\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "// Code added here will be run once\n// whenever the node is started.\ncontext.set('blueLedValue',1);",
